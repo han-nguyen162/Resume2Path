@@ -13,7 +13,7 @@ Resume2Path is an end-to-end AI-powered web application that helps users analyze
 
 2. **Set up environment variables**
    ```bash
-   cp .env.example .env.local
+   cp env.example .env.local
    # Edit .env.local with your actual values
    ```
 
@@ -38,6 +38,9 @@ Create a `.env.local` file with:
 # OpenAI API Key for GPT-4o-mini
 OPENAI_API_KEY=your_openai_api_key_here
 
+# Gemini API Key
+GEMINI_API_KEY=your_google_gemini_key_here
+
 # Vercel Postgres Database URL
 POSTGRES_URL=your_vercel_postgres_url_here
 
@@ -49,6 +52,17 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 
 # Optional: Resend API Key for email functionality
 # RESEND_API_KEY=your_resend_api_key_here
+
+# Firebase config
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key_here
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id_here
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id_here
+
+# MongoDB Connection String
+MONGODB_URI=mongodb://localhost:27017/resume2review
 ```
 
 ## 🏗️ Architecture
